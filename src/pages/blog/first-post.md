@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BlogPost.astro
-title: First post2
-description: Lorem ipsum dolor sit amet
-publishDate: Jul 08 2022
-heroImage: /assets/placeholder-hero.jpg
+title: Test post blog new
+description: Checking to see if post works
+publishDate: 2023-05-15T08:44:33.835Z
+heroImage: /assets/1634581871019.jpeg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
