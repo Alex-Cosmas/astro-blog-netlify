@@ -1,25 +1,65 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../config';
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../config";
 ---
 
 <header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
-	</nav>
+  <header class="z-30 flex items-center w-full h-24 sm:h-32">
+    <div class="container flex items-center justify-between px-6 mx-auto">
+      <div
+        class="flex items-center text-3xl font-black text-gray-800 uppercase dark:text-white"
+      >
+        <a href="/">
+          <h2>
+            {SITE_TITLE}
+          </h2>
+        </a>
+      </div>
+      <div class="flex items-center">
+        <nav
+          class="items-center hidden text-lg text-gray-800 uppercase font-sen dark:text-white lg:flex"
+        >
+          <HeaderLink
+            href="/about"
+            class="flex px-6 py-2 hover:text-black hover:border-b-2"
+          >
+            About
+          </HeaderLink>
+          <HeaderLink
+            href="/work"
+            class="flex px-6 py-2 hover:text-black hover:border-b-2"
+          >
+            Work
+          </HeaderLink>
+
+          <HeaderLink
+            href="/resume"
+            class="flex px-6 py-2 hover:text-black hover:border-b-2"
+          >
+            Resume
+          </HeaderLink>
+          <HeaderLink
+            href="/blog"
+            class="flex px-6 py-2 hover:text-black hover:border-b-2"
+          >
+            Blog
+          </HeaderLink>
+        </nav>
+
+        <button class="flex flex-col ml-4 lg:hidden">
+          <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"> </span>
+          <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"> </span>
+          <span class="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"> </span>
+        </button>
+      </div>
+    </div>
+  </header>
 </header>
 <style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
+  header {
+    margin: 0em 0 2em;
+  }
+  h2 {
+    margin: 0.5em 0;
+  }
 </style>
