@@ -7,9 +7,12 @@ description: Astro is the all-in-one web framework designed for speed. Pull your
 publishDate: 2023-05-16T18:32:39.620Z
 heroImage: /assets/placeholder-hero.jpg
 ---
+
 Nisi habitasse lorem bibendum felis senectus pellentesque aliquet. Nec rutrum erat mollis risus parturient mus ante quam sociosqu. Vestibulum libero pellentesque ut sapien egestas natoque conubia euismod nam. Scelerisque vulputate libero efficitur inceptos lectus cursus commodo diam venenatis proin. Tincidunt sed finibus si etiam venenatis quisque placerat aenean tempor efficitur. Rhoncus maximus torquent luctus ad penatibus. Vestibulum pellentesque nostra id magna fringilla.
 
 Conubia eros purus dui lorem fermentum. Urna curabitur tristique porttitor volutpat elit letius. Curabitur nec turpis quisque aliquet est neque efficitur duis vulputate. Potenti nulla ultrices pede ex porta tempus amet curabitur.
+
+![](/assets/0_piyxvd9x3plwivb6.webp)
 
 Diam lobortis habitant pretium consectetuer turpis. Tempor primis interdum ipsum a vel molestie curae justo habitasse porta himenaeos. Ante cursus arcu auctor facilisi suscipit erat. Laoreet habitasse pede rutrum himenaeos ornare nascetur nostra eu ut imperdiet. Senectus et convallis morbi aptent sed ornare blandit dis pretium id. Convallis netus mus dis dictum parturient quis imperdiet eu scelerisque. At est cubilia posuere eleifend penatibus dui maecenas amet auctor.
 
