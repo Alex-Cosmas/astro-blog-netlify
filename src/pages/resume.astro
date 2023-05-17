@@ -1,0 +1,190 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import Experience from "../components/resume/experience.astro";
+import Details from "../components/resume/details.astro";
+
+// Use Astro.glob() to fetch all posts, and then sort them by date.
+const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort(
+  (a, b) =>
+    new Date(b.frontmatter.publishDate).valueOf() -
+    new Date(a.frontmatter.publishDate).valueOf()
+);
+---
+
+<!DOCTYPE html>
+<html lang="en-us" class="font-sans">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class="mx-auto container">
+      <content>
+        <div class="">
+          <div class="">
+            <div class="space-y-4">
+              <div>
+                <h1 class="text-5xl font-semibold leading-tight text-gray-300">
+                  Resume
+                </h1>
+              </div>
+
+              <div class="text-lg text-gray-900 leading-normal">
+                <p>A summary of my experience and work done over the years.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-10" />
+
+        <div class="mx-auto px-24 container">
+          <div class="bg-hero-zig-zag">
+            <main class="font-jost hyphens-manual">
+              <!-- Page -------------------------------------------------------------------------------------------------------->
+              <section
+                class="p-3 mx-auto my-auto bg-gray-100 border-4 border-gray-700 print:border-0 page print:max-w-letter print:max-h-letter print:mx-0 print:my-o lg:h-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 lg:mt-6 rounded-2xl print:bg-white"
+              >
+                <!-- Name ---------------------------------------------------------------------------------------------------->
+
+                <div class="grid w-full grid-cols-3 py-10 space-x-10">
+                  <div class="col-span-2">
+                    <section class="block">
+                      <h1 class="mb-0 text-5xl font-bold text-gray-700">
+                        Alex Cosmas
+                      </h1>
+                      <!--Job Title--------------------------------------------------------------------------------------------------------->
+                      <h2
+                        class="m-0 ml-0 text-2xl font-semibold text-gray-700 leading-snugish"
+                      >
+                        User Experience Engineer
+                      </h2>
+                      <!--Location --------------------------------------------------------------------------------------------------------->
+
+                      <h3
+                        class="m-0 mt-2 ml-0 font-semibold text-lg text-gray-500 leading-snugish"
+                      >
+                        Nairobi, Kenya
+                      </h3>
+                    </section>
+                  </div>
+                  <div class="col-span-1">
+                    <!-- Contact Information ------------------------------------------------------------------------------------->
+                    <section class="pb-2 mb-0 mt-4 first:mt-0">
+                      <!-- To keep in the same column -------------------------------------------------------------------------->
+                      <section class="break-inside-avoid">
+                        <section
+                          class="pb-4 mb-2 border-gray-300 break-inside-avoid"
+                        >
+                          <ul class="list-inside pr-7">
+                            <li
+                              class="mt-1 leading-normal text-black transition duration-100 ease-in text-gray-500 text-md hover:text-gray-700 print:"
+                            >
+                              <a
+                                href="https://thomasleonhighbaugh.me"
+                                class="group"
+                              >
+                                <span
+                                  class="mr-2 text-lg font-semibold text-gray-700 leading-snugish"
+                                >
+                                  Portfolio:
+                                </span>
+                                thomasleonhighbaugh.me
+                                <span
+                                  class="inline-block font-normal text-black transition duration-100 ease-in text-gray-500 print:text-black group-hover:text-gray-700 print:"
+                                >
+                                  ↗
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="mt-1 leading-normal transition duration-100 ease-in text-gray-500 text-md hover:text-gray-700"
+                            >
+                              <a
+                                href="https://github.com/Thomashighbaugh"
+                                class="group"
+                              >
+                                <span
+                                  class="mr-5 text-lg font-semibold text-gray-700 leading-snugish"
+                                >
+                                  Github:
+                                </span>
+                                Thomashighbaugh
+                                <span
+                                  class="inline-block font-normal text-black transition duration-100 ease-in text-gray-500 print:text-black group-hover:text-gray-700 print:"
+                                >
+                                  ↗
+                                </span>
+                              </a>
+                            </li>
+
+                            <li
+                              class="mt-1 leading-normal transition duration-100 ease-in text-gray-500 text-md hover:text-gray-700"
+                            >
+                              <a
+                                href="mailto:thighbaugh@zoho.com"
+                                class="group"
+                              >
+                                <span
+                                  class="mr-8 text-lg font-semibold text-gray-700 leading-snugish"
+                                >
+                                  Email:
+                                </span>
+                                thighbaugh@zoho.com
+                                <span
+                                  class="inline-block font-normal transition duration-100 ease-in text-gray-500 print:text-black group-hover:text-gray-700"
+                                >
+                                  ↗
+                                </span>
+                              </a>
+                            </li>
+                            <li
+                              class="mt-1 leading-normal transition duration-100 ease-in text-gray-500 text-md hover:text-gray-700"
+                            >
+                              <a href="tel:+15103095128">
+                                <span
+                                  class="mr-5 text-lg font-semibold text-gray-700 leading-snugish"
+                                >
+                                  Phone:
+                                </span>
+                                +1(510)309-5128
+                              </a>
+                            </li>
+                          </ul>
+                        </section>
+                      </section>
+                    </section>
+                  </div>
+                </div>
+
+                <!-- Column -------------------------------------------------------------------------------------------------->
+                <section
+                  class="col-gap-8 md:col-count-2 print:col-count-2 md:h-letter-col-full print:h-letter-col-full col-fill-balance"
+                >
+                  <section class="flex-col"></section>
+                </section>
+
+                <div class="grid w-full grid-cols-3 py-10 space-x-10">
+                  <div class="col-span-2">
+                    <Experience />
+                  </div>
+                  <div class="col-span-1">
+                    <Details />
+                  </div>
+                </div>
+              </section>
+
+              <!-- end Column -->
+            </main>
+            <!-- end Page -->
+          </div>
+        </div>
+      </content>
+
+      <Footer />
+    </main>
+  </body>
+</html>
