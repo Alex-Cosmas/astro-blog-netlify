@@ -33,7 +33,7 @@ const heroImageAsset = assets.find((asset) => {
 });
 ---
 
-<html class="mx-auto container px-24">
+<html class="mx-auto container px-24 font-mono">
   <head>
     <BaseHead title={title} description={description} />
     <style>
@@ -52,27 +52,32 @@ const heroImageAsset = assets.find((asset) => {
     <Header />
     <main>
       <article>
-        {
-          heroImageAsset && (
-            <Image
-              width={720}
-              height={360}
-              src={heroImageAsset.default}
-              alt=""
-            />
-          )
-        }
-        <h1 class="title">{title}</h1>
-        {publishDate && <time>{publishDate}</time>}
-        {
-          updatedDate && (
-            <div>
-              Last updated on <time>{updatedDate}</time>
-            </div>
-          )
-        }
-        <hr />
-        <slot />
+        <div class="shadow mb-8">
+          {
+            heroImageAsset && (
+              <Image
+                width={720}
+                height={360}
+                src={heroImageAsset.default}
+                alt=""
+              />
+            )
+          }
+          <h1 class="title">{title}</h1>
+          {publishDate && <time>{publishDate}</time>}
+          {
+            updatedDate && (
+              <div>
+                Last updated on <time>{updatedDate}</time>
+              </div>
+            )
+          }
+          <hr />
+        </div>
+
+        <div class="container mx-auto my-4 px-20 space-y-8">
+          <slot />
+        </div>
       </article>
     </main>
     <Footer />
