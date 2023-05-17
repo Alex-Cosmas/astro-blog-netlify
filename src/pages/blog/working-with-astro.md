@@ -5,7 +5,7 @@ description: Astro is the all-in-one web framework designed for speed. Pull your
   content from anywhere and deploy everywhere, all powered by your favorite UI
   components and libraries.
 publishDate: 2023-05-16T18:32:39.620Z
-heroImage: https://imgix.cosmicjs.com/e987e2d0-307f-11ed-873b-2bc1a58daa5a-full-logo-light.png?w=500&auto=compress,format
+heroImage: /assets/placeholder-hero.jpg
 ---
 Nisi habitasse lorem bibendum felis senectus pellentesque aliquet. Nec rutrum erat mollis risus parturient mus ante quam sociosqu. Vestibulum libero pellentesque ut sapien egestas natoque conubia euismod nam. Scelerisque vulputate libero efficitur inceptos lectus cursus commodo diam venenatis proin. Tincidunt sed finibus si etiam venenatis quisque placerat aenean tempor efficitur. Rhoncus maximus torquent luctus ad penatibus. Vestibulum pellentesque nostra id magna fringilla.
 
