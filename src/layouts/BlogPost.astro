@@ -38,7 +38,7 @@ const heroImageAsset = assets.find((asset) => {
     <BaseHead title={title} description={description} />
     <style>
       .title {
-        font-size: 4em;
+        font-size: 2em;
         margin: 0.25em 0 0;
       }
       hr {
@@ -48,7 +48,7 @@ const heroImageAsset = assets.find((asset) => {
     </style>
   </head>
 
-  <body>
+  <body class="text-lg">
     <Header />
     <main class="mx-auto container">
       <article>
@@ -79,7 +79,9 @@ const heroImageAsset = assets.find((asset) => {
           </div>
         </div>
 
-        <hr class="my-4" />
+        <div class="my-10">
+          <hr />
+        </div>
 
         <div class="container mx-auto my-4 px-20 space-y-8 text-lg">
           <slot />
